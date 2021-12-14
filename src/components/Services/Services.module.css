@@ -1,0 +1,82 @@
+.container {
+    background: linear-gradient(to right, #9703bd, #660798);
+    padding: 5rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 3em;
+}
+
+/* Service 1 */
+.service1Image {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    pointer-events: none;
+}
+.service1Title {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: flex-end;
+}
+.service1Descrip {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-self: flex-start;
+}
+
+/* Service 2 */
+.service2Image {
+    grid-column: 2/3;
+    grid-row: 3/5;
+    pointer-events: none;
+}
+.service2Title {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    align-self: flex-end;
+}
+.service2Descrip {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    align-self: flex-start;
+}
+
+/* Service 3 */
+.service3Image {
+    grid-column: 1/2;
+    grid-row: 5/7;
+    pointer-events: none;
+}
+.service3Title {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    align-self: flex-end;
+}
+.service3Descrip {
+    grid-column: 2/3;
+    grid-row: 6/7;
+    align-self: flex-start;
+}
+
+@media (max-width: 1050px) {
+    .container {
+        padding: 5rem 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Service 1 */
+    .service1Title {
+        align-self: center;
+    }
+    
+    /* Service 2 */
+    .service2Title {
+        align-self: center;
+    }
+    
+    /* Service 3 */
+    .service3Title {
+        align-self: center;
+    }
+}
