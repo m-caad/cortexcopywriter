@@ -173,7 +173,7 @@ const NavBar = () => {
                                     smooth={true}
                                     offset={0}
                                     duration={500}
-                                >Contact</Link>
+                                >Contacttest</Link>
                                 <Link
                                     className='nav-text'
                                     activeClass="active"
